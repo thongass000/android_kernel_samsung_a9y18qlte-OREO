@@ -20,7 +20,7 @@
 #include <linux/sock_diag.h>
 
 #include "flask.h"
-#include "include/av_permissions.h"
+#include "av_permissions.h"
 #include "include/security.h"
 
 struct nlmsg_perm {

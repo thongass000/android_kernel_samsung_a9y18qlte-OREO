@@ -14,8 +14,8 @@
 #include <linux/slab.h>
 
 #include "include/security.h"
-#include "include/conditional.h"
-#include "include/services.h"
+#include "conditional.h"
+#include "services.h"
 
 /*
  * cond_evaluate_expr evaluates a conditional expr

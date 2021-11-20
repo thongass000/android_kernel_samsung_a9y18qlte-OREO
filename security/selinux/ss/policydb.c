@@ -32,7 +32,7 @@
 #include <linux/errno.h>
 #include <linux/audit.h>
 #include <linux/flex_array.h>
-#include "security.h"
+#include "include/security.h"
 
 #include "policydb.h"
 #include "conditional.h"

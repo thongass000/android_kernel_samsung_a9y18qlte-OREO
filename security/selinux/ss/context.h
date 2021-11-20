@@ -17,7 +17,7 @@
 
 #include "ebitmap.h"
 #include "mls_types.h"
-#include "security.h"
+#include "include/security.h"
 
 /*
  * A security context consists of an authenticated user

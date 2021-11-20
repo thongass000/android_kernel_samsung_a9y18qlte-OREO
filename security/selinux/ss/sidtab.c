@@ -8,7 +8,7 @@
 #include <linux/spinlock.h>
 #include <linux/errno.h>
 #include "flask.h"
-#include "security.h"
+#include "include/security.h"
 #include "sidtab.h"
 
 #define SIDTAB_HASH(sid) \

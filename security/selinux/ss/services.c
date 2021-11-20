@@ -55,20 +55,20 @@
 #include <net/netlabel.h>
 
 #include "flask.h"
-#include "avc.h"
-#include "avc_ss.h"
-#include "security.h"
+#include "include/avc.h"
+#include "include/avc_ss.h"
+#include "include/security.h"
 #include "context.h"
 #include "policydb.h"
 #include "sidtab.h"
 #include "services.h"
 #include "conditional.h"
 #include "mls.h"
-#include "objsec.h"
-#include "netlabel.h"
-#include "xfrm.h"
+#include "include/objsec.h"
+#include "include/netlabel.h"
+#include "include/xfrm.h"
 #include "ebitmap.h"
-#include "audit.h"
+#include "include/audit.h"
 
 int selinux_policycap_netpeer;
 int selinux_policycap_openperm;
@@ -1237,7 +1237,7 @@ static int context_struct_to_string(struct context *context, char **scontext, u3
 	return 0;
 }
 
-#include "initial_sid_to_string.h"
+#include "include/initial_sid_to_string.h"
 
 const char *security_get_initial_sid_context(u32 sid)
 {

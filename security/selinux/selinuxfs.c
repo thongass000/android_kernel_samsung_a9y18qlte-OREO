@@ -35,11 +35,11 @@
    Based on the proc code and the fs/nfsd/nfsctl.c code. */
 
 #include "flask.h"
-#include "avc.h"
-#include "avc_ss.h"
-#include "security.h"
-#include "objsec.h"
-#include "conditional.h"
+#include "include/avc.h"
+#include "include/avc_ss.h"
+#include "include/security.h"
+#include "include/objsec.h"
+#include "include/conditional.h"
 
 /* Policy capability filenames */
 static char *policycap_names[] = {

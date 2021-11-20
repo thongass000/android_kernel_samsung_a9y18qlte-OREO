@@ -14,7 +14,7 @@
 #include <linux/module.h>
 #include <linux/selinux.h>
 
-#include "security.h"
+#include "include/security.h"
 
 bool selinux_is_enabled(void)
 {

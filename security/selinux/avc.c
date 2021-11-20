@@ -30,9 +30,9 @@
 #include <linux/audit.h>
 #include <linux/ipv6.h>
 #include <net/ipv6.h>
-#include "avc.h"
-#include "avc_ss.h"
-#include "classmap.h"
+#include "include/avc.h"
+#include "include/avc_ss.h"
+#include "include/classmap.h"
 
 // [ SEC_SELINUX_PORTING_COMMON
 #ifdef SEC_SELINUX_DEBUG

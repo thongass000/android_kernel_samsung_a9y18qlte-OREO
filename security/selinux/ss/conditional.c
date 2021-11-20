@@ -13,9 +13,9 @@
 #include <linux/spinlock.h>
 #include <linux/slab.h>
 
-#include "security.h"
-#include "conditional.h"
-#include "services.h"
+#include "include/security.h"
+#include "include/conditional.h"
+#include "include/services.h"
 
 /*
  * cond_evaluate_expr evaluates a conditional expr

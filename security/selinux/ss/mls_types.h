@@ -14,7 +14,7 @@
 #ifndef _SS_MLS_TYPES_H_
 #define _SS_MLS_TYPES_H_
 
-#include "security.h"
+#include "include/security.h"
 #include "ebitmap.h"
 
 struct mls_level {

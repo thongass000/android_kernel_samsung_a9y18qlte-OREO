@@ -25,9 +25,9 @@
 #include <linux/rcupdate.h>
 #include <net/net_namespace.h>
 
-#include "security.h"
-#include "objsec.h"
-#include "netif.h"
+#include "include/security.h"
+#include "include/objsec.h"
+#include "include/netif.h"
 
 #define SEL_NETIF_HASH_SIZE	64
 #define SEL_NETIF_HASH_MAX	1024

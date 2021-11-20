@@ -37,9 +37,9 @@
 #include <net/ip.h>
 #include <net/ipv6.h>
 
-#include "objsec.h"
-#include "security.h"
-#include "netlabel.h"
+#include "include/objsec.h"
+#include "include/security.h"
+#include "include/netlabel.h"
 
 /**
  * selinux_netlbl_sidlookup_cached - Cache a SID lookup

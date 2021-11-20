@@ -20,7 +20,7 @@
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 
-#include "security.h"
+#include "include/security.h"
 
 static struct sock *selnl;
 

@@ -13,8 +13,8 @@
 #include <linux/gfp.h>
 #include <linux/mm.h>
 #include <linux/mutex.h>
-#include "avc.h"
-#include "services.h"
+#include "include/avc.h"
+#include "include/services.h"
 
 /*
  * The selinux_status_page shall be exposed to userspace applications

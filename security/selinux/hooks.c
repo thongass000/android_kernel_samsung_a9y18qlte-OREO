@@ -88,15 +88,15 @@
 #include <linux/delay.h>
 // ] SEC_SELINUX_PORTING_COMMON
 
-#include "avc.h"
-#include "objsec.h"
-#include "netif.h"
-#include "netnode.h"
-#include "netport.h"
-#include "xfrm.h"
-#include "netlabel.h"
-#include "audit.h"
-#include "avc_ss.h"
+#include "include/avc.h"
+#include "include/objsec.h"
+#include "include/netif.h"
+#include "include/netnode.h"
+#include "include/netport.h"
+#include "include/xfrm.h"
+#include "include/netlabel.h"
+#include "include/audit.h"
+#include "include/avc_ss.h"
 
 /* SECMARK reference count */
 static atomic_t selinux_secmark_refcount = ATOMIC_INIT(0);

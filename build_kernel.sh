@@ -1,10 +1,14 @@
 #!/bin/bash
 
-export ARCH=arm64
-export CROSS_COMPILE=$(pwd)/../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+rm -rf out
+mkdir out
 
-mkdir $(pwd)/out
-make -C $(pwd) O=$(pwd)/out KCFLAGS=-mno-android a9y18qlte_eur_open_defconfig
-make -j16 -C $(pwd) O=$(pwd)/out KCFLAGS=-mno-android
+export CROSS_COMPILE=$(pwd)/toolchain/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export KCFLAGS=-w
+export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 
-cp $(pwd)/out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
+make -C $(pwd) O=$(pwd)/out ARCH=arm64 KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a9y18qlte_eur_open_defconfig
+make -C $(pwd) O=$(pwd)/out ARCH=arm64 KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y -j40
+
+cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
+

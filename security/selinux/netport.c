@@ -39,8 +39,8 @@
 #include <net/ip.h>
 #include <net/ipv6.h>
 
-#include "netport.h"
-#include "objsec.h"
+#include "include/netport.h"
+#include "include/objsec.h"
 
 #define SEL_NETPORT_HASH_SIZE       256
 #define SEL_NETPORT_HASH_BKT_LIMIT   16

@@ -23,7 +23,7 @@
 #ifndef _SS_AVTAB_H_
 #define _SS_AVTAB_H_
 
-#include "security.h"
+#include "include/security.h"
 #include <linux/flex_array.h>
 
 struct avtab_key {
